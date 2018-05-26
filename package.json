@@ -1,0 +1,24 @@
+{
+  "name": "lsystemjs",
+  "version": "0.1.0",
+  "description": "LSystem library for Javascript",
+  "main": "lsystem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foldover/lsystem.git"
+  },
+  "author": "Jacob Romano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Foldover/lsystem/issues"
+  },
+  "homepage": "https://github.com/Foldover/lsystem#readme",
+  "devDependencies": {
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  }
+}

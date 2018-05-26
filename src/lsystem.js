@@ -1,6 +1,6 @@
 'use strict';
 
-class LSystem {
+export class LSystem {
   constructor() {
     this.state = undefined;
     this.axiom = undefined;
