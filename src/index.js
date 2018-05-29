@@ -35,5 +35,3 @@ class LSystem {
     this._rules[predecessor] = successor;
   }
 }
-
-module.exports = LSystem;
