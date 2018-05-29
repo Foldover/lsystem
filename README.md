@@ -8,7 +8,7 @@ lsystemjs is a small library for creating lindenmayer systems in Javascript. For
 You can use lsystemjs in node by running:
 `npm install lsystemjs`
 For convenience, you can use lsystemjs client-side by adding this script tag to your html
-`<script type="text/javascript" src="https://unpkg.com/lsystemjs@latest"></script>`
+`<script type="module" src="https://unpkg.com/lsystemjs@latest"></script>`
 
 ## Example
 

@@ -1,6 +1,6 @@
 'use strict';
 
-class LSystem {
+export class LSystem {
   constructor(alphabet, axiom) {
     this.axiom = axiom.slice(0);
     this._alphabet = alphabet;
