@@ -2,23 +2,39 @@
   "name": "lsystemjs",
   "version": "0.1.0",
   "description": "LSystem library for Javascript",
-  "main": "lsystem.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "clean": "rm -rf dist",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir dist",
+    "prepublish": "npm run clean && npm run build"
   },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "unpkg": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Foldover/lsystem.git"
   },
+  "keywords": [
+    "l-systems",
+    "creative-coding",
+    "lindenmayer"
+  ],
   "author": "Jacob Romano",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Foldover/lsystem/issues"
   },
   "homepage": "https://github.com/Foldover/lsystem#readme",
+  "dependencies": {},
   "devDependencies": {
-    "webpack": "^4.9.1",
-    "webpack-cli": "^2.1.4"
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.3.0",
+    "cross-env": "^5.1.6"
   }
 }
